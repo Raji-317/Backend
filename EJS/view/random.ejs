@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random number generator</title>
+</head>
+<body>
+    <!-- passing daTA TO EJS -->
+    <h2>when a die is thrown then generate a random number between 1 and 6</h2>
+    <!-- <p1>Dice gave value:<%=Math.floor(Math.random()*6)+1 %></p1> -->
+    <!-- conditional statements  -->
+     <% var dice = Math.floor(Math.random()*6)+1; %>
+  <p>Dice gave value: <%= dice %></p>
+<% if(dice === 6){ %>
+  <p>It's a six!</p>
+<% } %>
+</body>
+</html>

@@ -1,0 +1,17 @@
+{
+  "name": "project2",
+  "version": "1.0.0",
+  "description": "it is my 1st backend project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "RajyaLakshmi",
+  "license": "ISC",
+  "dependencies": {
+    "figlet": "^1.10.0",
+    "give-me-a-joke": "^0.5.1"
+    
+  }
+}
+// /it is the another extension t/hat we have installed at last and that is now added in the dependencies
