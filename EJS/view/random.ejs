@@ -1,10 +1,11 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Random number generator</title>
-</head>
+</head> -->
+<%-include("includes/head.ejs")%>
 <body>
     <!-- passing daTA TO EJS -->
     <h2>when a die is thrown then generate a random number between 1 and 6</h2>
@@ -15,5 +16,6 @@
 <% if(dice === 6){ %>
   <p>It's a six!</p>
 <% } %>
+<%-include("includes/footer.ejs")%>
 </body>
 </html>

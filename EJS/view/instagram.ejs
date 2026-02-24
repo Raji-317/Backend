@@ -1,46 +1,23 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>instagram</title>
-</head>
-<body></body>
-    <h2>INTERFACE OF AN INSTAGRAM USING EJS</h2>
-    <p>This is an instagram page <%=username%></p>
+
+
+<%-include("includes/head.ejs")%>
+<body>
+<h2>INTERFACE OF AN INSTAGRAM USING EJS</h2>
+    <h2>This is an instagram page <%=data.name %></h2>
     <button>Follow</button>
     <button>Messages</button>
-    <button>Posts</button>
-    <p>Followers</p>
-    <ul>
-          <% for(let name of followers) { %>
-            <li><%=name%></li>
-          <% } %>
-    </ul>
+<p> Followers:<%= data.followers %> &nbsp; &nbsp;&nbsp;&nbsp; Following:<%= data.following %></p>
+<hr/>
+<% for(let post of data.posts){ %>
+    <img src="<%=post.image %>" alt="Post Image"/>
 
+<p>Likes:<%=post.likes%> &nbsp;&nbsp;&nbsp;&nbsp;  Comments:<%=post.comments%></p>
 
-<!-- //on clicking action -->
-    <!-- <body>
-    <h2>INTERFACE OF AN INSTAGRAM USING EJS</h2>
-    <p>This is an instagram page <%= username %></p>
+<% } %>
 
-    <button id="followersBtn">Followers</button>
-    <ul id="followersList"></ul> 
-
-    <script>
-        const btn = document.getElementById("followersBtn");
-        const list = document.getElementById("followersList");
-         const followers = <%-JSON.stringify(followers)%>;
-
-        btn.addEventListener("click", () => {
-            list.innerHTML = ""; // clear previous
-
-            followers.forEach(name => {
-                const li = document.createElement("li");
-                li.textContent = name;
-                list.appendChild(li);
-            });
-        });
-    </script> -->
+<%-include("includes/footer.ejs")%>
 </body>
 </html>
+ 
+
+

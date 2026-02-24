@@ -1,0 +1,8 @@
+/* <!-- Serving static files in which for all templates we may use these file as a static these are static files ..we can use these anywhere --> */
+body{
+    background-color: rgb(213, 160, 189);
+}
+img{
+    height:200px;
+    width:200px;
+}
